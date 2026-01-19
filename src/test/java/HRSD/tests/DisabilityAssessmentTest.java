@@ -60,7 +60,7 @@ public class DisabilityAssessmentTest {
 
     @Test(priority = 3, dependsOnMethods = "testServiceSubmission")
     public void testExtractRequestNumber() throws InterruptedException {
-        Thread.sleep(5000); // Stabilization wait
+        Thread.sleep(5000);
         savedRequestNumber = requestsPage.getRequestNumber();
 
         Assert.assertNotNull(savedRequestNumber, "Request Number should not be null");
